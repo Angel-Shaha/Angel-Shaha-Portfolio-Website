@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Shaha Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/47a80f3c42.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Machine Learning and<br>Front-End Web Development</p>
+            <h1>Hi, I'm <span>Angel Shaha</span><br>from India</h1>
+        </div>
+      </div>  
+    </div>
+    <!----------about section----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+            <div class="about-col-1">
+                <img src="images/Informal photo.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am motivated to work as a Software Engineer with skills in Machine Learning and Front-End Web 
+                    Development. I have coding skills in Java, C++ and Python. Currently, I am working 
+                    on my Final Year Project which is Youtube Comment Analyser using Natural Language Processing.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Coding</span><br>Java, C++, Python</li>
+                        <li><span>Machine Learning</span><br>Prediction Models</li>
+                        <li><span>Web Development</span><br>Creating Web Applications</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>June/July 2023</span><br> Machine Learning Internship under Feynn Labs.</li>
+                        <li><span>June 2023</span><br>Full Stack Web Development Training and<br>Internship from IBM Developer Skills Network.</li>
+                        <li><span>November 2022:</span><br>Summer Training on Machine Learning from<br>
+                            Tech Gyan in association with IIT Bombay.</li>
+                        <li><span>May 2021</span><br>Summer Training on Internet of Things (IoT) from<br>
+                            WAC in association with Megalith IIT Kharagpur</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020-2024</span><br>Pursuing B.Tech in ECE from Heritage Institute of<br>
+                            Technology, Kolkata under MAKAUT, West Bengal.</li>
+                        <li><span>2019</span><br>12th Boards (ISC) Science Stream from DPS<br>Newtown, Kolkata</li>
+                        <li><span>2017</span><br>10th Boards (ICSE) from KIS, Mumbai.</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-------------services-------------->
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Machine Learning</h2>
+                    <p>Prediction models</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>Web Development</h2>
+                    <p>Front-End Web Development using HTML, CSS, JS</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-users"></i>
+                    <h2>ML-Market Segmentation</h2>
+                    <p>Segmentation models</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!----------------portfolio---------------->
+
+<div class="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/Email.jpeg">
+                <div class="layer">
+                    <h3>Spam Mail Prediction</h3>
+                    <p>This model predicts whether a mail is spam or ham.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/Medical.jpeg">
+                <div class="layer">
+                    <h3>Diabetes Prediction</h3>
+                    <p>This model predicts whether the person with the given symptoms has diabetes or not.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/Rainfall Prediction.jpeg">
+                <div class="layer">
+                    <h3>Annual Rainfall Prediction</h3>
+                    <p>This model predicts Annual Rainfall based on previous years' data</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-----------------contact------------------> 
+
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> angelshaha01@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +91 8697702022</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/angel-shaha-a247a9238/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Angel Shaha Resume (I).pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Angel. Made by Angel Shaha</p>
+    </div>
+</div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu=document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemanu.style.right = "0";
+        }
+        function closemenu(){
+            sidemanu.style.right = "-200px";
+        }
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwCi3otYQ0c2MpCWAE205xs_4lmaQ8WCZhCdvl2WTCpfDpZDjr4VsVggmAvJgkxPDnauw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
